@@ -3,51 +3,49 @@ export default function NewsletterSection() {
     <section
       id="contact"
       className="relative overflow-hidden"
-      style={{ backgroundColor: "#D7EEDD" }}
+      style={{ backgroundColor: "#DCEFD9" }}
     >
-      <div className="absolute left-1/2 top-8 -translate-x-1/2">
+      <div className="absolute left-1/2 top-6 -translate-x-1/2 pointer-events-none">
         <svg
-          width="160"
-          height="80"
-          viewBox="0 0 160 80"
+          width="220"
+          height="110"
+          viewBox="0 0 220 110"
           fill="none"
         >
           <path
-            d="M40 0C40 30 0 30 0 60"
-            stroke="#FF6B6B"
+            d="M50 0C50 40 0 40 0 80"
+            stroke="#F46B6B"
             strokeWidth="2"
             fill="none"
           />
           <path
-            d="M90 0C90 30 50 30 50 60"
-            stroke="#FF6B6B"
+            d="M120 0C120 40 70 40 70 80"
+            stroke="#F46B6B"
             strokeWidth="2"
             fill="none"
           />
         </svg>
       </div>
 
-      <div className="absolute right-[8%] top-[120px] hidden lg:block">
+      <div className="absolute right-[6%] top-[100px] hidden lg:block">
         <div
-          className="w-[80px] h-[100px] bg-[#8E4EDB]"
+          className="w-[110px] h-[140px] bg-[#8E4EDB]"
           style={{
-            borderTopLeftRadius: "100px",
-            borderBottomLeftRadius: "100px",
+            borderTopLeftRadius: "140px",
+            borderBottomLeftRadius: "140px",
           }}
         />
       </div>
 
-      <div className="max-w-[1200px] mx-auto px-6 pt-20 pb-16">
-
+      <div className="max-w-[1280px] mx-auto px-6 pt-28 pb-20">
         <div className="text-center">
-
-          <h2 className="font-gerbil text-black leading-[0.9] text-[52px] md:text-[72px]">
+          <h2 className="font-gerbil text-black leading-[0.9] text-[56px] md:text-[80px]">
             Subscribe to
             <br />
             our newsletter
           </h2>
 
-          <p className="font-satoshi text-[14px] mt-4 text-black/70">
+          <p className="font-satoshi text-[15px] mt-5 text-black/70">
             To make your stay special and even more memorable
           </p>
 
@@ -56,14 +54,13 @@ export default function NewsletterSection() {
           </button>
         </div>
 
-        <div className="mt-16">
+        <div className="mt-20">
           <div className="h-px bg-black/20 w-full" />
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mt-12">
-
+       <div className="grid grid-cols-2 md:grid-cols-4 gap-16 lg:gap-24 mt-14">
           <div>
-            <h4 className="font-satoshi text-lg mb-6">
+            <h4 className="font-satoshi font-medium text-lg mb-6">
               Company
             </h4>
 
@@ -76,7 +73,7 @@ export default function NewsletterSection() {
           </div>
 
           <div>
-            <h4 className="font-satoshi text-lg mb-6">
+            <h4 className="font-satoshi font-medium text-lg mb-6">
               Terms & Policies
             </h4>
 
@@ -89,7 +86,7 @@ export default function NewsletterSection() {
           </div>
 
           <div>
-            <h4 className="font-satoshi text-lg mb-6">
+            <h4 className="font-satoshi font-medium text-lg mb-6">
               Follow Us
             </h4>
 
@@ -102,16 +99,16 @@ export default function NewsletterSection() {
           </div>
 
           <div>
-            <h4 className="font-satoshi text-lg mb-6">
-              Terms & Policies
+            <h4 className="font-satoshi font-medium text-lg mb-6">
+              Contact
             </h4>
 
             <div className="space-y-4 text-sm text-black/70">
               <p>
-                1498W Fulton ste,
+                1498W Fulton Ste,
                 <br />
                 STE 2D Chicago,
-                IL 63867.
+                IL 63867
               </p>
 
               <p>(123) 45678900</p>
@@ -119,14 +116,12 @@ export default function NewsletterSection() {
               <p>info@elementum.com</p>
             </div>
           </div>
-
         </div>
 
-        <div className="text-center mt-20 text-xs text-black/50">
+        <div className="text-center mt-24 text-xs text-black/50">
           ©2023 Elementum. All rights reserved
         </div>
-
       </div>
     </section>
-  )
+  );
 }

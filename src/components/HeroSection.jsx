@@ -12,10 +12,9 @@ const avatars = [
     id: 1,
     src: av255,
     style: {
-      width: 82,
-      left: "10%",
-      top: "12px",
-      zIndex: 1,
+      width: 88,
+      left: "8%",
+      top: "60px",
     },
   },
   {
@@ -23,57 +22,69 @@ const avatars = [
     src: av256,
     style: {
       width: 82,
-      left: "15%",
-      top: "0px",
-      zIndex: 2,
+      left: "16%",
+      top: "20px",
     },
   },
   {
     id: 3,
     src: av262,
-    alt: "",
-    style: { width: 92, left: "33%", top: "-20px" },
+    style: {
+      width: 92,
+      left: "31%",
+      top: "-10px",
+    },
   },
-
   {
     id: 4,
-    src: av258,
-    alt: "",
-    style: { width: 82, left: "49%", top: "0px" },
+    src: av257,
+    style: {
+      width: 82,
+      left: "43%",
+      top: "80px",
+    },
   },
-
   {
     id: 5,
-    src: av259,
-    alt: "",
-    style: { width: 82, left: "57%", top: "18px" },
+    src: av258,
+    style: {
+      width: 92,
+      left: "56%",
+      top: "10px",
+    },
   },
-
   {
     id: 6,
-    src: av260,
-    alt: "",
-    style: { width: 96, left: "73%", top: "-6px" },
+    src: av259,
+    style: {
+      width: 88,
+      left: "66%",
+      top: "40px",
+    },
   },
-
   {
     id: 7,
-    src: av261,
-    alt: "",
-    style: { width: 82, left: "86%", top: "10px" },
+    src: av260,
+    style: {
+      width: 96,
+      left: "80%",
+      top: "5px",
+    },
   },
-
   {
     id: 8,
-    src: av257,
-    alt: "",
-    style: { width: 82, left: "41%", top: "72px" },
+    src: av261,
+    style: {
+      width: 82,
+      left: "92%",
+      top: "55px",
+    },
   },
 ];
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full overflow-hidden pt-10 md:pt-14">
+    <section className="relative w-full overflow-hidden pt-10 md:pt-12">
       <div
         className="absolute top-4 right-10 md:right-16 w-12 h-16 md:w-14 md:h-20 pointer-events-none"
         aria-hidden="true"
@@ -106,8 +117,8 @@ export default function HeroSection() {
         </svg>
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        <h1 className="font-gerbil text-black-400 font-normal text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight text-brand-dark">
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        <h1 className="font-gerbil font-normal text-[52px] sm:text-[68px] md:text-[84px] lg:text-[96px] leading-[0.92] text-brand-dark tracking-[-0.03em]">
           The <span className="underline-squiggle">thinkers</span> and
           <br className="hidden sm:block" /> doers were{" "}
           <span className="highlight-pink">changing</span>
@@ -115,17 +126,16 @@ export default function HeroSection() {
           <span className="highlight-green">status</span> Quo with
         </h1>
 
-        <p className="mt-6 font-sans text-sm md:text-base text-brand-gray max-w-md mx-auto leading-relaxed">
+        <p className="mt-8 font-sans text-sm md:text-[15px] text-brand-gray max-w-lg mx-auto leading-7">
           We are a team of strategists, designers communicators, researchers.
           Togsether, we belive that progress only hghtappens when you refuse to
           play things safe.
         </p>
       </div>
 
-      
       <div
         className="hidden md:block relative max-w-[1100px] mx-auto mt-16"
-        style={{ height: "180px" }}
+        style={{ height: "200px" }}
       >
         {avatars.map((avatar) => (
           <img

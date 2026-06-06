@@ -1,22 +1,26 @@
-import { HiArrowRight } from 'react-icons/hi'
+import { HiArrowRight } from "react-icons/hi";
 
 export default function ServiceRow({ category, title }) {
   return (
-    <div className="flex items-center justify-between py-5 md:py-6 border-b border-gray-200 group cursor-pointer">
-      <p className="font-sans text-xs md:text-sm text-brand-gray leading-tight w-28 md:w-36 shrink-0">
-        {category}
-      </p>
+    <div className="flex items-center justify-between py-7 md:py-8 border-b border-[#E8E8E8] cursor-pointer">
+      <div className="w-[140px] md:w-[180px] shrink-0">
+        <p className="font-satoshi text-[12px] md:text-[13px] leading-5 text-[#6B6B6B]">
+          {category}
+        </p>
+      </div>
 
-      <h3 className="font-serif text-xl md:text-2xl lg:text-3xl text-brand-dark flex-1 text-center px-4 group-hover:text-brand-red transition-colors duration-200">
-        {title}
-      </h3>
+      <div className="flex-1 px-6 md:px-10">
+        <h3 className="font-gerbil text-[24px] md:text-[32px] lg:text-[38px] leading-[1] text-black">
+          {title}
+        </h3>
+      </div>
 
-      <div className="w-8 h-8 flex items-center justify-center shrink-0">
+      <div className="w-12 flex justify-end shrink-0">
         <HiArrowRight
-          size={18}
-          className="text-brand-dark group-hover:translate-x-1 transition-transform duration-200"
+          size={22}
+          className="text-black transition-transform duration-200 hover:translate-x-1"
         />
       </div>
     </div>
-  )
+  );
 }
